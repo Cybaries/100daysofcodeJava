@@ -1,20 +1,15 @@
 class simpleDotcomTester {
-    double arr = (Math.random() * 10)%4;
-    int hitCount = 0;
-
-    public void checking(String s) {
+    
+    public String checking(String s, int arr[], int p) {
         int x = Integer.parseInt(s);
-        if (x == arr || x == arr + 1 || x == arr + 2) {
-            if (hitCount < 3) {
-                System.out.println("HIT!");
-            } else {
-                System.out.println("Kill! You have succeeded in sinking ");
-                return;
+        for (int i=0; i<p; i++){
+            if (x == arr[i] || x == arr[i] + 1) {
+                System.out.println("Kill!");
+                return ("Kill!");
             }
-            hitCount++;
-        } else {
-            System.out.println("Miss!");
         }
+        System.out.println("Miss!");
+        return ("Miss!");
     }
     
 
