@@ -1,7 +1,3 @@
-import java.lang.ProcessBuilder.Redirect.Type;
-
-import javax.lang.model.element.TypeElement;
-
 public class Day6 {
     public static void main(String[] args) throws Exception {
         int arr[] = { 3, 1, 2, 3, 4, 6 };
